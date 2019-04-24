@@ -1,0 +1,17 @@
+<div class="ng-content">
+	<h1 class = "heading">{{mainHeading}}</h1>
+	
+	<table class = "table table-bordered">
+		<tr >
+			
+			<th *ngFor = "let header of this.tableHeaders">{{header}}</th>
+			
+		</tr>
+
+		<tr *ngFor = "let data of this.dataArray;">
+			
+			<td *ngFor = "let col of this.colLength">{{data[col]}}</td>
+		</tr>
+		
+	</table>
+</div>

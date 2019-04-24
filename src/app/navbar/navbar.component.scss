@@ -1,0 +1,22 @@
+ul{
+	list-style: none;
+	display: block;
+	border: 2px solid #333;
+}
+
+li{
+	display: inline-block;
+	margin: 25px 0px 38px 117px;
+	padding: 10px;
+	font-size: 1.3em;
+	cursor: pointer;
+}
+li:hover{
+	background-color: red;
+	color: white;
+}
+
+#nav{
+	background-color: #dfdfdfa1;
+}
+

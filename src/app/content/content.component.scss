@@ -1,0 +1,120 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+    @import url(https://fonts.googleapis.com/css?family=Oswald:400);
+* {
+  
+  transition: all 400ms ease;
+  
+   font-family: 'Oswald', 'Helvetica Neue', Helvetica;
+}
+body {
+
+   background: #222;
+   color: #f1f1f1;
+   min-width: 768px;
+
+}
+
+
+.row, .column {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-shadow: 0 -1px 1px rgba(0,0,0,0.2),0 1px 2px rgba(255,255,255,0.2);
+
+}
+
+.row:hover h1, .column:hover h1{
+
+  top: -30px;
+
+}
+
+.row {
+  width: 95%;
+  background: #444;
+  height: 95px;
+  position: relative;
+  float: left;
+  margin: 1.5% 2.5% 0 2.5%;
+
+}
+
+.column {
+
+  width: 28.333333%;
+  background: #444;
+  height: 95px;
+  position: relative;
+  float: left;
+  margin: 2.5%;
+
+}
+
+h1 {
+
+  width: 100%;
+  position: absolute;
+  background: #00d8d0;
+  padding: 8px;
+  line-height: 1em;
+  top: 0px;
+  font-size: 2em;
+  display: block;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: -8px;
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,0.4);
+
+}
+
+h1:before, h1:after {
+
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  content: " ";
+  transform: rotate(-45deg);
+  z-index: -1;
+  bottom: -6px;
+
+}
+
+h1:before {
+  
+  left: 3px;
+  background: linear-gradient(135deg, rgba(0,216,208,1) 0%,rgba(0,0,0,1) 100%);
+
+}
+
+h1:after {
+  background: linear-gradient(135deg, rgba(0,0,0,1) 0%,rgba(0,216,208,1) 100%);
+  right: 2px;
+
+}
+
+span {
+
+  display: block;
+  box-sizing: border-box;
+  background: #f1f1f1;
+  width: 90%;
+  top: 22px;
+  color: #444;
+  margin-left: 5%;
+  padding:10px;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+	box-shadow: 0 8px 6px -6px rgba(0,0,0,0.5);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  
+}
+
+.row:hover span, .column:hover span{
+  
+  top: 39px;
+
+}
